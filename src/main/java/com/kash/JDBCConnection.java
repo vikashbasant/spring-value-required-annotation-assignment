@@ -37,7 +37,7 @@ public class JDBCConnection {
             if(con.isClosed()){
                 System.out.println("Connection is still closed");
             }else{
-                System.out.println("Connection is Made, Relax Man Chill...");
+                System.out.println("Connection is Made, Relax Man Chill...!");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
