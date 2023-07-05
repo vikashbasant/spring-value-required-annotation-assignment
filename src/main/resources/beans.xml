@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--by using <context:annotation-config/> we are enabled all annotation:-->
+    <context:annotation-config/>
+
+
+    <!--by using <context:property-placeholder location="database-connection.properties"/> from the given location, we are fetch the dynamic value:-->
+    <context:property-placeholder location="database-connection.properties"/>
+
+    <!--Create an Object with the JDBCConnection-->
+    <bean id="connection" class="com.kash.JDBCConnection">
+
+    </bean>
+
+
+</beans>
